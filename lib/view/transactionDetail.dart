@@ -52,8 +52,8 @@ class TransactionDetail extends StatelessWidget {
                     onPressed: () => save(context),
                     child: Text(
                         transDetailController!.savedTransaction
-                            ? "Update"
-                            : "Save",
+                            ? "อัพเดท"
+                            : "บันทึก",
                         style: TextStyle(color: whiteColor))),
               ),
             ],
@@ -191,7 +191,7 @@ class TransactionDetail extends StatelessWidget {
                           fontSize: 20,
                           fontWeight: FontWeight.bold),
                       decoration: InputDecoration(
-                          hintText: "Amount",
+                          hintText: "จำนวนเงิน",
                           hintStyle: TextStyle(color: greyText),
                           border: InputBorder.none),
                     )),
@@ -207,7 +207,7 @@ class TransactionDetail extends StatelessWidget {
                 minLines: 20,
                 maxLines: 50,
                 decoration: InputDecoration(
-                    hintText: "Description here...", border: InputBorder.none),
+                    hintText: "รายละเอีบดรายการ...", border: InputBorder.none),
               ),
             ),
           ),

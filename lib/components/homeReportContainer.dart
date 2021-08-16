@@ -24,7 +24,7 @@ class HomeReportContainer extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text("Total Balance",
+          Text("ยอดเงินเหลือทั้งหมด",
               style: TextStyle(
                   color: whiteColor,
                   fontSize: 22,
@@ -32,13 +32,13 @@ class HomeReportContainer extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("INR", style: TextStyle(color: textINRColor)),
+              Text("THB", style: TextStyle(color: textINRColor)),
               Expanded(
                 child: AutoSizeText(
                     transactionController.total.toStringAsFixed(1),
                     style: TextStyle(
                         color: whiteColor,
-                        fontSize: 30,
+                        fontSize: 50,
                         fontWeight: FontWeight.bold),
                     maxLines: 2,
                     textAlign: TextAlign.center),

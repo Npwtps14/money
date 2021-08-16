@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => TransDetailController()),
       ],
       child: MaterialApp(
-        title: 'Day Manager',
+        title: 'Money budget',
         theme: ThemeData(
             primaryColor: primaryColor, scaffoldBackgroundColor: Colors.white),
         debugShowCheckedModeBanner: false,
